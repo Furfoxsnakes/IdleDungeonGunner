@@ -24,6 +24,8 @@ namespace Character
 
         public bool CanRoll => MovementDetails.RollCooldownTime <= 0;
 
+        public event EventHandler<Collider2D> OnCollision;
+
         private void Awake()
         {
             Anim = GetComponent<Animator>();
@@ -34,6 +36,11 @@ namespace Character
         {
             // count down roll cooldown timer
             MovementDetails?.CountdownCooldownTimer();
+        }
+
+        private void OnCollisionEnter2D(Collision2D col)
+        {
+            OnCollision?.Invoke(this, col.collider);
         }
 
         // OLD STATE MACHINE - KEEPING JUST IN CASE

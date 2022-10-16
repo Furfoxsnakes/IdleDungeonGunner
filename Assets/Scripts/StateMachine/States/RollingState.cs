@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using ParadoxNotion.Design;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
@@ -22,6 +23,12 @@ namespace StateMachine.States
         {
             base.OnInit();
             _moveAction = _inputAction.FindAction("Move");
+            Character.OnCollision += OnCollision;
+        }
+
+        private void OnCollision(object sender, Collider2D col)
+        {
+            Finish();
         }
 
         protected override void OnEnter()
@@ -46,9 +53,11 @@ namespace StateMachine.States
         protected override void OnUpdate()
         {
             var distance = Vector2.Distance(Character.transform.position, _targetPos);
-            Debug.Log(distance);
-            if ( distance<= 0.2f)
+            if (distance <= 0.2f)
+            {
+                Character.transform.position = _targetPos;
                 Finish();
+            }
         }
     }
 }
