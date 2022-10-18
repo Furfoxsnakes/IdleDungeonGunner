@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Character
+  - Monster
   layers:
   - Default
   - TransparentFX
@@ -15,10 +17,10 @@ TagManager:
   - Decorations
   - Walls
   - Items
-  - Characters
-  - 
-  - 
-  - 
+  - Player
+  - PlayerAmmo
+  - EnemyAmmo
+  - Enemy
   - 
   - 
   - 
@@ -55,4 +57,7 @@ TagManager:
     locked: 0
   - name: Characters
     uniqueID: 1463584751
+    locked: 0
+  - name: Ammo
+    uniqueID: 3783508609
     locked: 0
