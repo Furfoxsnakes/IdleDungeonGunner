@@ -1,4 +1,5 @@
 ﻿using System;
+using Character;
 using UnityEngine;
 using Utilities;
 
@@ -37,6 +38,12 @@ namespace DefaultNamespace.Arsenal
 
         private void OnCollisionEnter2D(Collision2D col)
         {
+
+            var character = col.gameObject.GetComponent<Character.Character>();
+            if (character == null) return;
+
+            character.Health.TakeDamage(1);
+            
             Disable();
         }
 

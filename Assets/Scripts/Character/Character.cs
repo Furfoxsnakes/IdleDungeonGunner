@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using StateMachine;
 using UnityEngine.InputSystem;
@@ -16,9 +18,12 @@ namespace Character
         public Vector2 Pos => transform.position;
 
         public Character Target;
+        public List<Character> Targets;
+        public Health Health;
 
         [Space(10)] [Header("Character Stats")]
-        public MovementDetails MovementDetails;
+        [Required] public MovementDetails MovementDetails;
+        [SerializeField, Required] private CharacterDetailsSO _characterDetails;
 
         public float MoveSpeed => MovementDetails.MoveSpeed;
 
@@ -32,15 +37,23 @@ namespace Character
             Body = GetComponent<Rigidbody2D>();
         }
 
+        private void Start()
+        {
+            Health = new Health(10);
+        }
+
         private void FixedUpdate()
         {
             // count down roll cooldown timer
             MovementDetails.CountdownCooldownTimer();
+            // Targets = 
         }
 
         private void OnCollisionEnter2D(Collision2D col)
         {
             OnCollision?.Invoke(this, col.collider);
         }
+
+        public bool IsDead() => Health.Current <= 0;
     }
 }
