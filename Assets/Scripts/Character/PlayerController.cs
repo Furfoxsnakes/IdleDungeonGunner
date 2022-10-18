@@ -13,10 +13,5 @@ namespace Character
         {
             _character = GetComponent<Character>();
         }
-
-        private void OnCollisionEnter2D(Collision2D col)
-        {
-            
-        }
     }
 }

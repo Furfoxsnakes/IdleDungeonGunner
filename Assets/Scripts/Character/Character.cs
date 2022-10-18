@@ -14,13 +14,13 @@ namespace Character
         [HideInInspector] public Rigidbody2D Body;
         [HideInInspector] public Animator Anim;
         public Vector2 Pos => transform.position;
-        
-        [Header("Character States")]
-        [SerializeField] private State Idle;
-        [SerializeField] private State Move;
+
+        public Character Target;
 
         [Space(10)] [Header("Character Stats")]
         public MovementDetails MovementDetails;
+
+        public float MoveSpeed => MovementDetails.MoveSpeed;
 
         public bool CanRoll => MovementDetails.RollCooldownTime <= 0;
 
@@ -35,38 +35,12 @@ namespace Character
         private void FixedUpdate()
         {
             // count down roll cooldown timer
-            MovementDetails?.CountdownCooldownTimer();
+            MovementDetails.CountdownCooldownTimer();
         }
 
         private void OnCollisionEnter2D(Collision2D col)
         {
             OnCollision?.Invoke(this, col.collider);
         }
-
-        // OLD STATE MACHINE - KEEPING JUST IN CASE
-        // PROBABLY DON'T NEED ANY MORE
-        // private void Start()
-        // {
-        //     SetState(Idle);
-        // }
-        //
-        // public override void Update()
-        // {
-        //     if (CurrentState.Complete)
-        //         if (CurrentState == Idle)
-        //             SetState(Move);
-        //         else if (CurrentState == Move)
-        //             SetState(Idle);
-        //     
-        //     base.Update();
-        // }
-        //
-        // public void SetNextState()
-        // {
-        //     if (CurrentState == Idle)
-        //         SetState(Move);
-        //     else if (CurrentState == Move)
-        //         SetState(Idle);
-        // }
     }
 }
