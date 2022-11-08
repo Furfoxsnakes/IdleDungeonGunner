@@ -40,9 +40,8 @@ namespace DefaultNamespace.Arsenal
         {
 
             var character = col.gameObject.GetComponent<Character.Character>();
-            if (character == null) return;
-
-            character.Health.TakeDamage(1);
+            if (character != null)
+                character.Health.TakeDamage(1);
             
             Disable();
         }

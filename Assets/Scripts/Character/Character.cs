@@ -54,6 +54,12 @@ namespace Character
             OnCollision?.Invoke(this, col.collider);
         }
 
+        public void Die()
+        {
+            Engine.E.CurrentDungeonRoom.RemoveSpawnedEnemy(this);
+            gameObject.SetActive(false);
+        }
+
         public bool IsDead() => Health.Current <= 0;
     }
 }

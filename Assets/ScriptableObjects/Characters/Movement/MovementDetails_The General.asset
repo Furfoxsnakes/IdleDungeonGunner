@@ -23,6 +23,6 @@ MonoBehaviour:
     SerializationNodes: []
   Name: The General
   RollCooldown: 2
-  RollCooldownTime: 0
+  RollCooldownTime: -14.540143
   RollDistance: 3
   RollSpeed: 10

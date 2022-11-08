@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
+using Dungeon;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -16,6 +17,8 @@ public class Engine : MonoBehaviour
     [BoxGroup("Player Details")]
     [Required]
     public Character.Character Player;
+
+    public DungeonRoom CurrentDungeonRoom;
 
     private void Awake()
     {

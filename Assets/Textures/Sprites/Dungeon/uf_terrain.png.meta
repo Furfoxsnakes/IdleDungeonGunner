@@ -4716,27 +4716,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uf_terrain_234
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 960
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba8232495c47dc040ae7afdb65567663
-      internalID: -1257786868
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: uf_terrain_235
       rect:
         serializedVersion: 2
@@ -4984,27 +4963,6 @@ TextureImporter:
       bones: []
       spriteID: c66c3add924adb142b50a1ece7dd8c30
       internalID: 378431481
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: uf_terrain_247
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 912
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b62cf3f60f4279e45865f00330e04227
-      internalID: 167158685
       vertices: []
       indices: 
       edges: []
@@ -5871,90 +5829,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uf_terrain_294
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 768
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44af3e8fe35f2944c985052fee0b3fe2
-      internalID: 411210024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: uf_terrain_295
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 768
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9570a63131173a4db4e68725ee5d87c
-      internalID: 734261147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: uf_terrain_296
-      rect:
-        serializedVersion: 2
-        x: 624
-        y: 768
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ae22631fd951514db0bd7fe371fb825
-      internalID: 477053343
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: uf_terrain_297
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 768
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f849cf706d273c840844ba131cec522c
-      internalID: 354525084
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: uf_terrain_298
       rect:
         serializedVersion: 2
@@ -6144,15 +6018,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uf_terrain_309
+      name: DoorwayNSClosed
       rect:
         serializedVersion: 2
         x: 480
         y: 720
         width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6165,15 +6039,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uf_terrain_310
+      name: DoorwayNSOpen
       rect:
         serializedVersion: 2
         x: 528
         y: 720
         width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6186,15 +6060,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uf_terrain_311
+      name: DoorwayEWClosed
       rect:
         serializedVersion: 2
         x: 576
         y: 720
         width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6207,15 +6081,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uf_terrain_312
+      name: DoorwayEWOpen
       rect:
         serializedVersion: 2
         x: 624
         y: 720
         width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6756,7 +6630,7 @@ TextureImporter:
       name: uf_terrain_343
       rect:
         serializedVersion: 2
-        x: 576
+        x: 578
         y: 576
         width: 48
         height: 48
@@ -8977,7 +8851,6 @@ TextureImporter:
       uf_terrain_371: -1766886617
       uf_terrain_452: 915954575
       uf_terrain_247: 167158685
-      uf_terrain_310: -618443716
       uf_terrain_424: -749517310
       uf_terrain_9: -362471771
       uf_terrain_331: 668439539
@@ -9101,7 +8974,6 @@ TextureImporter:
       uf_terrain_118: 1231626540
       uf_terrain_403: 919255313
       uf_terrain_42: -1505876873
-      uf_terrain_312: -1041655698
       uf_terrain_122: -2029101460
       uf_terrain_297: 354525084
       uf_terrain_291: 1817848421
@@ -9144,6 +9016,7 @@ TextureImporter:
       uf_terrain_197: -1819071430
       uf_terrain_225: -1520516016
       uf_terrain_388: 173023145
+      DoorwayEWOpen: -1041655698
       uf_terrain_14: -2021802923
       uf_terrain_11: -468599893
       uf_terrain_210: 637361692
@@ -9167,6 +9040,7 @@ TextureImporter:
       uf_terrain_158: -1495669363
       uf_terrain_360: -650281943
       uf_terrain_177: 1233861523
+      DoorwayEWClosed: 84907107
       uf_terrain_367: 939042346
       uf_terrain_95: -1808712842
       uf_terrain_48: -72199447
@@ -9181,6 +9055,7 @@ TextureImporter:
       uf_terrain_127: -1284148465
       uf_terrain_26: 645247207
       uf_terrain_22: 1897035906
+      DoorwayNSClosed: 331938348
       uf_terrain_100: -871451562
       uf_terrain_29: 1064691501
       uf_terrain_420: -891881828
@@ -9228,9 +9103,9 @@ TextureImporter:
       uf_terrain_62: 224834529
       uf_terrain_28: 886678552
       uf_terrain_77: 2074128636
-      uf_terrain_457: -1314032564
       uf_terrain_279: -363796023
       uf_terrain_206: 1638845877
+      uf_terrain_457: -1314032564
       uf_terrain_169: -355469701
       uf_terrain_246: 378431481
       uf_terrain_252: 2096476081
@@ -9261,7 +9136,6 @@ TextureImporter:
       uf_terrain_257: 1748695287
       uf_terrain_224: -1860724298
       uf_terrain_134: 1024443804
-      uf_terrain_311: 84907107
       uf_terrain_180: -80094705
       uf_terrain_389: 1324580659
       uf_terrain_300: -585924187
@@ -9278,7 +9152,6 @@ TextureImporter:
       uf_terrain_50: 719613970
       uf_terrain_170: -908122248
       uf_terrain_221: -1898852009
-      uf_terrain_309: 331938348
       uf_terrain_437: -696055226
       uf_terrain_60: 1893270006
       uf_terrain_132: 1072383616
@@ -9425,6 +9298,7 @@ TextureImporter:
       uf_terrain_125: -1505885048
       uf_terrain_255: 1323118217
       uf_terrain_172: -512569859
+      DoorwayNSOpen: -618443716
       uf_terrain_441: 242285285
       uf_terrain_45: 1451906058
   spritePackingTag: 
